@@ -5,8 +5,7 @@ This is the authors' implementation of the following paper:
 "Pool of Experts: Realtime Querying Specialized Knowledge in Massive Neural Networks", SIGMOD, 2021
 
 # Additional experimental result 
-### 5.3 Experiments on Model Consolidation
-### Comparison between soft loss and scale loss
+### 5.3 Experiments on Model Consolidation - Comparison between soft loss and scale loss
 
 # Quick Start: CIFAR-100
 We provide an CIFAR-100 example for Pool of Experts
