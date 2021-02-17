@@ -34,12 +34,16 @@ You can check the accuracy of Oracle and each model for primitive tasks by execu
 
 ### Service phase
     python Run_Service.py --queriedTask <primitive tasks>
-*Example*: `python Run_Service.py --queriedTask people vehicles_1 vehicles_2`
-           `python Run_Service.py --queriedTask people vehicles_1 vehicles_2`
+*Example 1*: `python Run_Service.py --queriedTask people vehicles_1 vehicles_2`
+*Example 2*: `python Run_Service.py --queriedTask arachnid canine feline`
 
-*CIFAR100: Available primitive tasks*: 
+*CIFAR100 Available primitive tasks*: 
 
     'large_omnivores_and_herbivores', 'medium-sized_mammals', 'people', 'small_mammals', 'vehicles_1', 'vehicles_2'
+    
+*TinyImageNet Available primitive tasks*: 
+
+    'arachnid', 'canine', 'feline', 'bird', 'ungulate', 'vertebrate_etc'
 
 You can check the accuracy of model for queried composite task by executing the above command
 
