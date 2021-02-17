@@ -38,7 +38,7 @@ You can check the accuracy of Oracle and each model for primitive tasks by execu
 
 *Available primitive tasks*: 
 
-    'aquatic_mammals', 'flowers', 'large_carnivores', 'large_omnivores_and_herbivores', 'medium-sized_mammals', 'people', 'small_mammals', 'vehicles_1', 'vehicles_2'
+    'large_omnivores_and_herbivores', 'medium-sized_mammals', 'people', 'small_mammals', 'vehicles_1', 'vehicles_2'
 
 You can check the accuracy of model for queried composite task by executing the above command
 
