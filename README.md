@@ -5,73 +5,16 @@ This is the authors' implementation of the following paper:
 "Pool of Experts: Realtime Querying Specialized Knowledge in Massive Neural Networks", SIGMOD, 2021
 
 # Additional experimental result 
-<table> 
-    <thead> 
-     <tr> 
-      <th rowspan=2>subset</th>
-      <th colspan=2>subNetwork</th>
-      <th colspan=2>OriginalNetwork</th>
-      <th rowspan=2>A/B (%)</th>
-     </tr>
-     <tr> 
-      <th># Params (A)</th>
-      <th>Test - acc</th>
-      <th># Params (B)</th>
-      <th>Test - acc</th>
-     </tr>
-    </thead> 
-    <tbody align='center'> 
-     <tr> 
-      <td colspan=6>Using MNISTdataset Network</td> 
-     </tr>
-     <tr> 
-      <td>[1, 4]</td>
-      <td>21,251</td>
-      <td>0.999</td>
-      <td rowspan=4>124,825</td>
-      <td>0.983</td>
-      <td>17.02</td>
-     </tr>
-     <tr> 
-      <td>[0, 2, 6]</td>
-      <td>29,947</td>
-      <td>0.992</td>
-      <td>0.980</td>
-      <td>23.99</td>
-     </tr>
-     <tr> 
-      <td>[0, 4, 6, 7]</td>
-      <td>40,243</td>
-      <td>0.992</td>
-      <td>0.981</td>
-      <td>32.24</td>
-     </tr>
-     <tr> 
-      <td>ALL</td>
-      <td>124,825</td>
-      <td>0.979</td>
-      <td>0.979</td>
-      <td>100.</td>
-     </tr>
-     <tr> 
-      <td colspan=6>Using FashionMNISTdataset Network</td> 
-     </tr>
-     <tr> 
-      <td>subset for shoes categories [5, 7, 9]</td>
-      <td>87,147</td>
-      <td>0.963</td>
-      <td rowspan=2>330,670</td>
-      <td>0.962</td>
-      <td>26.35</td>
-     </tr>
-     <tr> 
-      <td>ALL</td>
-      <td>330,670</td>
-      <td>0.911</td>
-      <td>0.911</td>
-      <td>100.</td>
-     </tr>
-    </tbody> 
+<table align='center'>
+<tr align='center'>
+<td> Average number of Nodes </td>
+</tr>
+<tr>
+<td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '400px'></td>
+</tr>
+<tr align='center'>
+<td>X-axis: Average number of nodes, Y-aixs: number of subset elements</td>
+</tr>
 </table>
 ### 5.3 Experiments on Model Consolidation - Comparison between soft loss and scale loss
 
