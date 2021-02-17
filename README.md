@@ -75,7 +75,7 @@ In the WRN architecture for Tiny-ImageNet experiments, the stride of the first c
 
 ### Training details for ImageNet
 
-We used the front part of MobilenetV2 as library and the number of channels in the back part of MobilenetV2 was significantly reduced and used as experts.
+We used the front part of MobilenetV2 as library and the number of channels in the back part of MobilenetV2 was significantly reduced and used as experts. (The detailed structure is expressed in ImageNet/PoE/network/pytorch_mobilenetV2.py.)
 
 When training the experts, we use a stochastic gradient descent (SGD) with 0.9 momentum and the weight decay of L-2 regularization was fixed to 5e-4. 
 
