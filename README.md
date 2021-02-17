@@ -9,7 +9,7 @@ This is the authors' implementation of the following paper:
 ### 5.3 Experiments on Model Consolidation
 
 <table>
-<td> Comparison between L<sub>soft</sub> and L<sub>scale</sub> loss </td>
+<td> Comparison between L<sub>soft</sub> and L<sub>scale</sub> </td>
 <tr>
 <td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '300px'></td>
 </tr>
