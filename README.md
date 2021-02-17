@@ -35,6 +35,7 @@ You can check the accuracy of Oracle and each model for primitive tasks by execu
 ### Service phase
     python Run_Service.py --queriedTask <primitive tasks>
 *Example*: `python Run_Service.py --queriedTask people vehicles_1 vehicles_2`
+           `python Run_Service.py --queriedTask people vehicles_1 vehicles_2`
 
 *CIFAR100: Available primitive tasks*: 
 
