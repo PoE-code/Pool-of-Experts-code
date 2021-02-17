@@ -22,8 +22,8 @@ In order to see the effectiveness of L<sub>scale</sub>, we build a different gro
 We compared the merge results using PoE for Ei trained using only L<sub>soft</sub> and L<sub>scale</sub> added L<sub>CKD</sub>, respectively, to see the effect of L<sub>scale</sub> in Section 4.1. The results are shown in Table 6. The results showed the average of the results for each combination. In Table Table 6 out mis/all mis means the rate at which the misclassification occurred due to having the largest logit value in the wrong M(H<sub>j</sub>) other than the model M(H<sub>i</sub>) of the H<sub>i</sub> to which each image belongs. L<sub>soft</sub> can confirm that the out mis/all mis are higher than the L<sub>CKD</sub> in both CIFAR-100 and Tiny-ImageNet, even though the high confidence issue has been resolved.
 
 
-# Quick Start: CIFAR-100, Tiny_ImageNet
-We provide an CIFAR-100 example for Pool of Experts
+# Quick Start: CIFAR-100, TinyImageNet
+We provide CIFAR-100 and TinyImageNet examples for Pool of Experts
 
 ### Preprocessing phase
     python Run_preprocessing.py
@@ -36,7 +36,7 @@ You can check the accuracy of Oracle and each model for primitive tasks by execu
     python Run_Service.py --queriedTask <primitive tasks>
 *Example*: `python Run_Service.py --queriedTask people vehicles_1 vehicles_2`
 
-*Available primitive tasks*: 
+*CIFAR100: Available primitive tasks*: 
 
     'large_omnivores_and_herbivores', 'medium-sized_mammals', 'people', 'small_mammals', 'vehicles_1', 'vehicles_2'
 
