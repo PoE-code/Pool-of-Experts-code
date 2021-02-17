@@ -6,7 +6,6 @@ This is the authors' implementation of the following paper:
 
 # Additional experimental result 
 <table align='center'>
-<tr align='center'>
 <td> Average number of Nodes </td>
 </tr>
 <tr>
@@ -14,7 +13,6 @@ This is the authors' implementation of the following paper:
 </tr>
 <tr align='center'>
 <td>X-axis: Average number of nodes, Y-aixs: number of subset elements</td>
-</tr>
 </table>
 ### 5.3 Experiments on Model Consolidation - Comparison between soft loss and scale loss
 
