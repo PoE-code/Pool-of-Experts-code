@@ -48,7 +48,7 @@ You can check the accuracy of Oracle and each model for primitive tasks by execu
 
 You can check the accuracy of model for queried composite task by executing the above command
 
-# Implementation and training details
+### Implementation and training details for CIFAR100 and TinyImageNet
 All algorithms were implemented using PyTorch and evaluated on a machine with an NVIDIA Quadro RTX 6000 and Intel Core Xeon Gold 5122.
 
 When training all the models, we use a stochastic gradient descent (SGD) with 0.9 momentum and the weight decay of L-2 regularization was fixed to 5e-4. 
