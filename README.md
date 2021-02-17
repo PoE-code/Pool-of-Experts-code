@@ -11,8 +11,8 @@ This is the authors' implementation of the following paper:
 <tr>
 <td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '200px'></td>
 </tr>
-<tr align='center'>
-<td>X-axis: Average number of nodes, Y-aixs: number of subset elements</td>
+<tr>
+
 </table>
 ### 5.3 Experiments on Model Consolidation - Comparison between soft loss and scale loss
 
