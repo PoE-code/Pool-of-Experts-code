@@ -6,14 +6,20 @@ This is the authors' implementation of the following paper:
 
 # Additional experimental result
 
-### 5.3 Experiments on Model Consolidation - Comparison between soft loss and scale loss
+### 5.3 Experiments on Model Consolidation - 
 
 <table>
-<td> Average number of Nodes </td>
+<td> Comparison between soft loss and scale loss </td>
 <tr>
-<td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '200px'></td>
+<td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '300px'></td>
 </tr>
 </table>
+
+We conduct an experiment to examine whether our $\L_{scale}$ loss can help to address the logit scale problem, as described in Section \ref{sec:main:service}. To this end, we focus on a specific type of errors caused by wrong experts that take a highest probability away from the correct expert, which we call \textit{cross-expert errors}. This type of errors are distinguished from those locally made within the classes of an expert, and cross-expert errors are more likely to happen when logit scales of experts being merged are quite different.
+
+In order to see the effectiveness of $\L_{scale}$, we build a different group of experts intentionally trained by only $\L_{soft}$, and build task-specific models upon them by the same knowledge consolidation method. We then look into how the proportion of cross-expert errors to all the errors has been changed after we add $\L_{scale}$ when extracting experts. In Table \ref{tab:additional misclassification}, we can observe that the rates of cross-expert errors are reduced when we use $\L_{scale}$ along with $\L_{soft}$. Thus, the experts trained by both $\L_{soft}$ and $\L_{scale}$ turn out to be more robust to cross-expert errors than those trained by only $\L_{soft}$. As the problem of overconfident experts has already been resolved by $\L_{soft}$, we can surely claim that minimizing the $\mathcal{L}_{scale}$ loss is effective to mitigate the logit scale problem.
+
+We compared the merge results using PoE for $E_i$ trained using only $\mathcal{L}_{soft}$ and $\mathcal{L}_{scale}$ added $\mathcal{L}_{CKD}$, respectively, to see the effect of $\mathcal{L}_{scale}$ in Section \ref{sec:main:preprocess}. The results are shown in Table \ref{tab:additional misclassification}. The results showed the average of the results for each combination. In Table \ref{tab:additional misclassification} \textit{out mis/all mis} means the rate at which the misclassification occurred due to having the largest logit value in the wrong $M(H_j)$ other than the model $M(H_i)$ of the $H_i$ to which each image belongs. $\mathcal{L}_{soft}$ can confirm that the \textit{out mis/all mis} are higher than the $\mathcal{L}_{CKD}$ in both CIFAR-100 and Tiny-ImageNet, even though the high confidence issue has been resolved.
 
 
 # Quick Start: CIFAR-100
