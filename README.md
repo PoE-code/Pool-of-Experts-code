@@ -11,7 +11,7 @@ This is the authors' implementation of the following paper:
 <table>
 <td> Comparison between L<sub>soft</sub> and L<sub>scale</sub> </td>
 <tr>
-<td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '300px'></td>
+<td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '250px'></td>
 </tr>
 </table>
 
