@@ -65,33 +65,15 @@ In the WRN architecture for Tiny-ImageNet experiments, the stride of the first c
 
 
 # Experimental results on ImageNet
-We provide CIFAR-100 and TinyImageNet examples for Pool of Experts
 
 <table>
-<td> Comparison between L<sub>soft</sub> and L<sub>scale</sub> </td>
+<td> Model Specialization and Consolidation </td>
 <tr>
 <td><img src = 'addImg/table_ImageNet.PNG' height = '100px'></td>
 </tr>
 </table>
 
-### Preprocessing phase
-    python Run_preprocessing.py
-
-We provide Oracle in DB_pretrained, library and some experts in DB_PoE
-
-You can check the accuracy of Oracle and each model for primitive tasks by executing the above command
-
-### Service phase
-    python Run_Service.py --queriedTask <primitive tasks>
-*Example for CIFAR100*: `python Run_Service.py --queriedTask people vehicles_1 vehicles_2`
-
-*CIFAR100 Available primitive tasks*: 
-
-    'large_omnivores_and_herbivores', 'medium-sized_mammals', 'people', 'small_mammals', 'vehicles_1', 'vehicles_2'
-
-You can check the accuracy of model for queried composite task by executing the above command
-
-### Implementation and training details for CIFAR100 and TinyImageNet
+### Training details for ImageNet
 All algorithms were implemented using PyTorch and evaluated on a machine with an NVIDIA Quadro RTX 6000 and Intel Core Xeon Gold 5122.
 
 When training all the models, we use a stochastic gradient descent (SGD) with 0.9 momentum and the weight decay of L-2 regularization was fixed to 5e-4. 
