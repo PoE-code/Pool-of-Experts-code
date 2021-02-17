@@ -5,7 +5,7 @@ This is the authors' implementation of the following paper:
 "Pool of Experts: Realtime Querying Specialized Knowledge in Massive Neural Networks", SIGMOD, 2021
 
 # Additional experimental result 
-<table align='center'>
+<table>
 <td> Average number of Nodes </td>
 </tr>
 <tr>
