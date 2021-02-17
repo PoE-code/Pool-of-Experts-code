@@ -14,7 +14,8 @@ This is the authors' implementation of the following paper:
 <td><img src = 'addImg/table6_cross_expert_errors.PNG' height = '300px'></td>
 </tr>
 </table>
-*L*
+
+_L_
 We conduct an experiment to examine whether our $\L_{scale}$ loss can help to address the logit scale problem, as described in Section \ref{sec:main:service}. To this end, we focus on a specific type of errors caused by wrong experts that take a highest probability away from the correct expert, which we call \textit{cross-expert errors}. This type of errors are distinguished from those locally made within the classes of an expert, and cross-expert errors are more likely to happen when logit scales of experts being merged are quite different.
 
 In order to see the effectiveness of $\L_{scale}$, we build a different group of experts intentionally trained by only $\L_{soft}$, and build task-specific models upon them by the same knowledge consolidation method. We then look into how the proportion of cross-expert errors to all the errors has been changed after we add $\L_{scale}$ when extracting experts. In Table \ref{tab:additional misclassification}, we can observe that the rates of cross-expert errors are reduced when we use $\L_{scale}$ along with $\L_{soft}$. Thus, the experts trained by both $\L_{soft}$ and $\L_{scale}$ turn out to be more robust to cross-expert errors than those trained by only $\L_{soft}$. As the problem of overconfident experts has already been resolved by $\L_{soft}$, we can surely claim that minimizing the $\mathcal{L}_{scale}$ loss is effective to mitigate the logit scale problem.
