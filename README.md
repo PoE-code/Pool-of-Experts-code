@@ -69,7 +69,7 @@ In the WRN architecture for Tiny-ImageNet experiments, the stride of the first c
 <table>
 <td> Model Specialization and Consolidation </td>
 <tr>
-<td><img src = 'addImg/table_ImageNet.PNG' height = '150px'></td>
+<td><img src = 'addImg/table_Imagenet.PNG' height = '120px'></td>
 </tr>
 </table>
 
