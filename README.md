@@ -75,8 +75,10 @@ In the WRN architecture for Tiny-ImageNet experiments, the stride of the first c
 
 ### Training details for ImageNet
 
-When training all the models, we use a stochastic gradient descent (SGD) with 0.9 momentum and the weight decay of L-2 regularization was fixed to 5e-4. 
+We used the front part of MobilenetV2 as library and the number of channels in the back part of MobilenetV2 was significantly reduced and used as experts.
 
-In all networks, we set the temperature T for distillation to 4 and the weight parameter alpha for scale loss to 0.3.
+When training the experts, we use a stochastic gradient descent (SGD) with 0.9 momentum and the weight decay of L-2 regularization was fixed to 5e-4. 
+
+We set the temperature T for distillation to 4 and the weight parameter alpha for scale loss to 0.3.
 
 In order to extract each expert by training primitive models, we train only the expert part for 30 epochs, where the initial learning rate is set to 0.01 and reduced by 0.1 times at 10 and 20 epochs.
