@@ -6,7 +6,7 @@ This is the authors' implementation of the following paper:
 
 # Additional experimental results
 
-### 5.3 Experiments on Model Consolidation
+### Experiments on the Effectiveness of L<sub>soft</sub> vs. L<sub>scale</sub>
 
 <table>
 <td> Comparison between L<sub>soft</sub> and L<sub>scale</sub> </td>
