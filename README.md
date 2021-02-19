@@ -57,7 +57,7 @@ The batch size of all networks was set to 512.
 
 In all networks, we set the temperature T for distillation to 4 and the weight parameter alpha for scale loss to 0.3.
 
-In order to extract each expert by training primitive models, we train only the expert part (i.e., conv 4) for 100 epochs, where the initial learning rate is set to 0.1 and reduced by 0.1 times at 40 and 80 epochs. The setting of transfer learning is the same.
+In order to extract each expert by training primitive models, we train only the expert part (i.e., conv 4) for 100 epochs, where the initial learning rate is set to 0.1 and reduced by 0.1 times at 40 and 80 epochs. In our experiments, we randomly choose six of all the primitive tasks for both CIFAR-100 and Tiny-ImageNet. The setting of transfer learning is the same.
 
 When training a target architecture without using the library part, the learning process was continued for 200 epochs, where the initial learning rate was 0.1 and reduced by 0.1 times at 80 and 160 epochs. 
 
@@ -81,4 +81,4 @@ When training the experts, we use a stochastic gradient descent (SGD) with 0.9 m
 
 We set the temperature T for distillation to 4 and the weight parameter alpha for scale loss to 0.3.
 
-In order to extract each expert by training primitive models, we train only the expert part for 20 epochs, where the initial learning rate is set to 0.01 and reduced by 0.1 times at 10 and 15 epochs.
+In order to extract each expert by training primitive models, we train only the expert part for 20 epochs, where the initial learning rate is set to 0.01 and reduced by 0.1 times at 10 and 15 epochs. In our experiments, we randomly choose four of all the primitive tasks for ImageNet.
