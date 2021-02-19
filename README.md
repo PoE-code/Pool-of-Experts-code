@@ -81,4 +81,4 @@ When training the experts, we use a stochastic gradient descent (SGD) with 0.9 m
 
 We set the temperature T for distillation to 4 and the weight parameter alpha for scale loss to 0.3.
 
-In order to extract each expert by training primitive models, we train only the expert part for 30 epochs, where the initial learning rate is set to 0.01 and reduced by 0.1 times at 10 and 20 epochs.
+In order to extract each expert by training primitive models, we train only the expert part for 20 epochs, where the initial learning rate is set to 0.01 and reduced by 0.1 times at 10 and 15 epochs.
