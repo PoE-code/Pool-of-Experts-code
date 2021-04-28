@@ -4,6 +4,8 @@ This is the authors' implementation of the following paper:
 
 "Pool of Experts: Realtime Querying Specialized Knowledge in Massive Neural Networks", SIGMOD, 2021
 
+Hakbin Kim, Dong-Wan Choi
+
 # Additional experimental results
 
 ### Experiments on the Effectiveness of L<sub>soft</sub> vs. L<sub>scale</sub>
